@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta author="SnoopyCodeX">
+    <title>🔥 FLAMES Game 🔥</title>
+
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <style>
+        html, body {
+            height: 100%;
+            width: 100%;
+        }
+
+        #accounts > strong,
+        #accounts > a {
+            font-size: 1.5rem;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="d-flex align-items-center flex-column justify-content-center h-100 bg-dark text-white">
+        <form autocomplete="off">
+            <div class="card bg-dark border border-0 mb-2 mx-3">
+                <div id="accounts" class="card-body text-center">
+                    <strong class="text-light">Follow me on:&nbsp;&nbsp;</strong>
+                    <a class="text-light" target="_blank" href="https://facebook.com/johnroycalimlim"><i class="fa fa-brands fa-facebook-square"></i>&nbsp;&nbsp;</a>
+                    <a class="text-light" target="_blank" href="https://github.com/SnoopyCodeX"><i class="fa fa-brands fa-github-square"></i>&nbsp;&nbsp;</a>
+                    <a class="text-light" target="_blank" href="https://linkedin.com/in/johnroylapida"><i class="fa fa-brands fa-linkedin-square"></i>&nbsp;&nbsp;</a>
+                </div>
+            </div>
+
+            <div class="card border border-light bg-danger shadow mb-2 mx-3">
+                <div class="card-header text-light text-center h5">
+                    🔥 FLAMES Game 🔥
+                </div>
+                <div class="card-body text-light">
+                    <strong>F.L.A.M.E.S</strong> is a game which determines the relationship between 2 person using their names.<br/>
+                    The result could either be "<strong>Friend</strong>", "<strong>Lovers</strong>", "<strong>Affection</strong>",
+                    "<strong>Marriage</strong>", "<strong>Enemy</strong>" or "<strong>Siblings</strong>". <br/>
+                    The acronym <strong>F.L.A.M.E.S</strong> could have a varying meanings in other places.
+                </div>
+            </div>
+
+            <div class="form mb-2">
+                <div class="col-auto">
+                    <label class="sr-only" for="yourname">Your name</label>
+                    <div class="input-group mb-2 border border-danger rounded">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text text-danger"><i class="fa fa-user"></i></div>
+                        </div>
+                        <input type="text" class="form-control" id="yourname" placeholder="Your name here">
+                    </div>
+                </div>
+
+                <div class="col-auto">
+                    <label class="sr-only" for="yourcrushname">Crush's name</label>
+                    <div class="input-group mb-2 border border-danger rounded">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text text-danger"><i class="fa fa-heart"></i></div>
+                        </div>
+                        <input type="text" class="form-control" id="yourcrushname" placeholder="Your crush's name here">
+                    </div>
+                </div>
+
+                <div class="col">
+                    <button type="submit" class="btn btn-danger border border-light mb-2 w-100">Determine Relationship</button>
+                </div>
+            </div>
+
+            <div class="alert border fade mx-3" role="alert">
+                <span id="message"></span>
+                <button type="button" class="close" id="close-alert">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <nav class="navbar fixed-bottom navbar-danger bg-danger">
+        <a class="navbar-brand text-light" href="./">🔥 FLAMES 🔥 </a>
+        <span class="text-light">&copy;2022</span>
+    </nav>
+</body>
+<script src="./fontawesome/fontawesome-kit.js"></script>
+<script src="./jquery/jquery-3.6.0.min.js"></script>
+<script src="./popper/popper-2.9.2.min.js"></script>
+<script src="./bootstrap/js/bootstrap.min.js"></script>
+<script src="./flames.js"></script>
+</html>
