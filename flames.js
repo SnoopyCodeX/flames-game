@@ -58,7 +58,7 @@ $('form').on('submit', (e) => {
         return;
     }
 
-    $('form').trigger('reset');
+    // $('form').trigger('reset');
     let result = doFLAMES(name1, name2);
 
     $('.alert>#message').html(`The result is:&nbsp;&nbsp;&nbsp;<strong>${result}</strong>`);
